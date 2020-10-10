@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FORMULARIO.Models;
 
-namespace FORMULARIO.Controllers
+namespace Formulario.Controllers
 {
     public class Formulario : Controller
     {
