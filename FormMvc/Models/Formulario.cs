@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Formulario.Models
+namespace FormMvc.Models
 {
     public class Formulario
     {
