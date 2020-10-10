@@ -6,5 +6,30 @@
 
 <div class="text-center">
     <h1 class="display-4">FORMULARIO</h1>
+     <form asp-controller="Formulario" asp-action="Enviar">
+            
+            <label>Nombre</label>
+            <input asp-for="Nombre"/>
+            <br/>
+            <label>Apellido</label>
+            <input asp-for="Apellido"/>
+            <br/> 
+            <label>Email</label>
+            <input asp-for="Email"/>
+            <br/>
+            <label>Telefono</label>
+            <input asp-for="Telefono"/>
+            <br/> 
+            <label>Subject</label>
+            <input asp-for="Subject"/>
+            <br/>
+            <label>Mensaje</label>
+            <input asp-for="Mensaje"/>
+            <br/> 
+            <input type="submit" value="Enviar"/>
+
+    </form>
+    <td>@Html.DisplayNameFor(model => model.respuesta)</td>
+    <td>@Html.DisplayTextFor(model => model.respuesta)</td>
     
 </div>
