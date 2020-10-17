@@ -24,7 +24,7 @@ namespace FormMvc.Controllers
         }
 
         [HttpPost]
-        public IActionResult Registrar(Contacto objEstudiante){
+        public IActionResult Registrar(Estudiante objEstudiante){
             if (ModelState.IsValid)
             {
                 objEstudiante.Response = "Gracias estamos en contacto";
