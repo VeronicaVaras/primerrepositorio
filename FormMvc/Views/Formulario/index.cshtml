@@ -3,39 +3,50 @@
 @{
     ViewData["Title"] = "Formulario Page";
 }
+<div class="row">
+    <div class="col-md-4">  
+        <h1 class="display-4">Formulario</h1>
+        <form asp-controller="Formulario" asp-action="Registrar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>    
 
-<div class="text-center">
-    <h1 class="display-4">FORMULARIO</h1>
-     <form asp-controller="Formulario" asp-action="Enviar">
-            <label>Nombre</label>
-            <br>
-            <input asp-for="Nombre"/>
-            <br/>
-            <label>Apellido</label>
-            <br>
-            <input asp-for="Apellido"/>
-            <br/> 
-            <label>Email</label>
-            <br>
-            <input asp-for="Email"/>
-            <br/>
-            <label>Telefono</label>
-            <br>
-            <input asp-for="Telefono"/>
-            <br/> 
-            <label>Subject</label>
-            <br>
-            <input asp-for="Subject"/>
-            <br/>
-            <label>Mensaje</label>
-            <br>
-            <input asp-for="Mensaje"/>
-            <br/> 
-            <br>
-            <input type="submit" value="Enviar"/>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>               
+                   
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>               
 
-    </form>
-    <td>@Html.DisplayNameFor(model => model.Respuesta)</td>
-    <td>@Html.DisplayTextFor(model => model.Respuesta)</td>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+            </div>               
+
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+            </div>    
+
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <textarea asp-for="Message" class="form-control" /></textarea>
+            </div>                
+
+            <div class="form-group">
+                 <button type="submit" class="btn btn-default">Registrar</button> 
+            </div>                
+
+        </form>
+            
+        <td>@Html.DisplayTextFor(model => model.Response)</td>    
     
+    </div>
 </div>
