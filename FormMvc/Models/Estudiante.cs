@@ -16,5 +16,7 @@ namespace FormMvc.Models
         [Display(Name="Curso")]
         public String Curso { get; set; }
 
+        public String Response { get; set; }
+
     }
 }
