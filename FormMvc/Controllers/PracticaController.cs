@@ -19,7 +19,7 @@ namespace FormMvc.Controllers
             DatabaseContext context)
         {
             _logger = logger;
-            _context=_context;
+            _context= context;
         }
 
         public IActionResult Index()
@@ -29,14 +29,14 @@ namespace FormMvc.Controllers
 
     
        [HttpPost]
-        public IActionResult Registrar(Practica objPractica1){
+        public IActionResult Registrar(Practica objPractica){
             if (ModelState.IsValid)
             {
-                _context.Add(objPractica1);
+                _context.Add(objPractica);
                 _context.SaveChanges();
-                objPractica1.Response = "Gracias por Registrarse" + objPractica1.Nombre;
+                objPractica.Response = "Gracias por Registrarse" + objPractica.Nombre;
             }
-            return View("index", objPractica1);
+            return View("index", objPractica);
         }
 
     }
