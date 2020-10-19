@@ -11,9 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Practicas.Data;
-{
-    
-}
+
 namespace Practicas
 {
     public class Startup
