@@ -1,5 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace FormMvc.Models
 {
@@ -7,44 +9,44 @@ namespace FormMvc.Models
     public class Practica
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [ColumnAttribute("id")]
+        [Column("id")]
         [Display(Name="Id")]
         public int Id { get; set; }
 
         
         [Required(ErrorMessage = "Por favor ingrese Nombre")]
         [Display(Name="Nombre")]
-        [ColumnAttribute("nombre")]
+        [Column("nombre")]
         public String Nombre { get; set; }
 
 
         [Required(ErrorMessage = "Por favor ingrese Apellido")]
         [Display(Name="Apellido")]
-        [ColumnAttribute("apellido")]
+        [Column("apellido")]
         public String Apellido { get; set; }
 
     
         [Required(ErrorMessage = "Por favor ingrese su Distrito")]
         [Display(Name="Distrito")]
-        [ColumnAttribute("distrito")]
+        [Column("distrito")]
         public String Distrito { get; set; }
 
         
         [Required(ErrorMessage = "Por favor ingrese su Edad")]
         [Display(Name="Edad")]
-        [ColumnAttribute("edad")]
+        [Column("edad")]
         public int  Edad { get; set; }
 
 
         [Required(ErrorMessage = "Por favor ingrese el Banco")]
         [Display(Name="Banco")]
-        [ColumnAttribute("banco")]
+        [Column("banco")]
         public String  Banco { get; set; }
 
         
         [Required(ErrorMessage = "Por favor ingrese su Genero")]
         [Display(Name="Genero")]
-        [ColumnAttribute("genero")]
+        [Column("genero")]
         public String  Genero { get; set; }
 
         [NotMapped]
