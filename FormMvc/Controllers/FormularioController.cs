@@ -26,7 +26,7 @@ namespace FormMvc.Controllers
        [HttpPost]
         public IActionResult Registrar(Formulario objFormulario){
 
-            objFormulario.Respuesta = "Ya estas Registrado" + objFormulario.Nombre;
+            objFormulario.Response = "Ya estas Registrado" + objFormulario.Nombre;
             return View("index", objFormulario);
         }
 
