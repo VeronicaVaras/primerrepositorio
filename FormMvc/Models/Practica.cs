@@ -44,8 +44,6 @@ namespace FormMvc.Models
         [Column("genero")]
         public String  Genero { get; set; }
 
-        [Column("autor")]
-        public string Autor { get;  }
 
         [NotMapped]
         public String Response { get; set; }
