@@ -10,7 +10,6 @@ namespace FormMvc.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
-        [Display(Name="Id")]
         public int Id { get; set; }
 
         
@@ -31,20 +30,17 @@ namespace FormMvc.Models
         [Column("distrito")]
         public String Distrito { get; set; }
 
-        
-        [Required(ErrorMessage = "Por favor ingrese su Edad")]
+
         [Display(Name="Edad")]
         [Column("edad")]
         public int  Edad { get; set; }
 
 
-        [Required(ErrorMessage = "Por favor ingrese el Banco")]
         [Display(Name="Banco")]
         [Column("banco")]
         public String  Banco { get; set; }
 
         
-        [Required(ErrorMessage = "Por favor ingrese su Genero")]
         [Display(Name="Genero")]
         [Column("genero")]
         public String  Genero { get; set; }
