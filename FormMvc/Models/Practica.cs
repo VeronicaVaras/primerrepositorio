@@ -7,44 +7,44 @@ namespace FormMvc.Models
     public class Practica
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Column("id")]
+        [ColumnAttribute("id")]
         [Display(Name="Id")]
         public int Id { get; set; }
 
         
         [Required(ErrorMessage = "Por favor ingrese Nombre")]
         [Display(Name="Nombre")]
-        [Column("nombre")]
+        [ColumnAttribute("nombre")]
         public String Nombre { get; set; }
 
 
         [Required(ErrorMessage = "Por favor ingrese Apellido")]
         [Display(Name="Apellido")]
-        [Column("apellido")]
+        [ColumnAttribute("apellido")]
         public String Apellido { get; set; }
 
     
         [Required(ErrorMessage = "Por favor ingrese su Distrito")]
         [Display(Name="Distrito")]
-        [Column("distrito")]
+        [ColumnAttribute("distrito")]
         public String Distrito { get; set; }
 
         
         [Required(ErrorMessage = "Por favor ingrese su Edad")]
         [Display(Name="Edad")]
-        [Column("edad")]
+        [ColumnAttribute("edad")]
         public int  Edad { get; set; }
 
 
         [Required(ErrorMessage = "Por favor ingrese el Banco")]
         [Display(Name="Banco")]
-        [Column("banco")]
+        [ColumnAttribute("banco")]
         public String  Banco { get; set; }
 
         
         [Required(ErrorMessage = "Por favor ingrese su Genero")]
         [Display(Name="Genero")]
-        [Column("genero")]
+        [ColumnAttribute("genero")]
         public String  Genero { get; set; }
 
         [NotMapped]
