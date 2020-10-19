@@ -34,7 +34,7 @@ namespace FormMvc.Controllers
             {
                 _context.Add(objPractica1);
                 _context.SaveChanges();
-                objPractica.Response = "Gracias por Registrarse" + objPractica1.Nombre;
+                objPractica1.Response = "Gracias por Registrarse" + objPractica1.Nombre;
             }
             return View("index", objPractica1);
         }
