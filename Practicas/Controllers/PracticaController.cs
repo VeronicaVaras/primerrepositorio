@@ -28,7 +28,7 @@ namespace Practicas.Controllers
         public IActionResult Registrar(Practica1 objPractica){
             if (ModelState.IsValid)
             {
-                objPractica.Response = "Gracias por Registrarse";
+                objPractica.Response = "Gracias por Registrarse" + objPractica.Nombre;
             }
             return View("index", objPractica);
         }
